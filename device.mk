@@ -91,6 +91,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# GCamGo Prebuilts
+PRODUCT_PACKAGES += \
+    GCamGoPrebuilts
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \
@@ -180,6 +184,10 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.chopin
+
+# Location Provider
+PRODUCT_PACKAGES += \
+    AMapLocationProvider
 
 # NFC
 PRODUCT_PACKAGES += \
