@@ -23,15 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/chopin/device.mk)
 
 # Inherit some common LineageOS stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+IS_GLOBAL := true
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := chopin
-PRODUCT_NAME := lineage_chopin
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := M2104K10AC
+PRODUCT_NAME := aosp_choping
+PRODUCT_BRAND := Xiaomi
+PRODUCT_DEVICE := choping
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := 21061110AG
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
